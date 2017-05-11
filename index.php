@@ -37,8 +37,17 @@ $aluno->insert();
 echo $aluno;
 */
 
+/*
+//Alterar um usuario
 $usuario = new Usuario();
 $usuario->loadById(8); //Carregamos o usuario 8
 $usuario->update("professor", "!@#$&*"); //Alterando o nome e a senha do usuario 5
 echo $usuario;
+*/
+
+$usuario = new Usuario();
+$usuario->loadById(7);
+$usuario->delete();
+echo $usuario;
+
  ?>
